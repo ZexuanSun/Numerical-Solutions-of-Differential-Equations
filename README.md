@@ -11,11 +11,10 @@ What I mainly did was using **finite difference method** to give numerical solut
 **Dirichlet** and **Neumann** boundary conditions.
 
 ## Project 2
-The second project is about **finite volume method** and the grids used to implement 
-scheme, to be specific, **vertex centered grids** and **cell centered grids**.
-I implemeted finite volume schemes with different grids to test the performances of varied 
-schemes for a particular partial differential equations under **Dirichlet** and **Neumann** boundary conditions.
-
+The second project is about **finite volume method** and its **convergence**.
+I mainly used **vertex centered grids** and **cell centered grids** to implemet the finite volume method. And I 
+tested their performances  under **Dirichlet** and **Neumann** boundary conditions.
+I also implemented numerical experiments to verify the convergence of finite volume method.
 
 ## Project 3
 The third project is about **Riemann problem for inviscid Burger's equation**.
