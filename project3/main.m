@@ -34,7 +34,7 @@ case 1 %Lax-Friedrichs
     unew(1) = u(1);
     unew(end) = u(end);
 case 2 %Lax-Wendroff
-    % 2 µ½end-1 Î»
+    % 2 åˆ°end-1 ä½
     unew(2:end-1) = u(2:end-1) ...
         - 0.5*dt/dx * (f(u(3:end)) - f(u(1:end-2))) ...
         + 0.5*(dt/dx)^2 * ...
@@ -101,11 +101,11 @@ if choice == 2
         case 4
             title('Beam-Warming')
     end
-     toy = ['ÖÕÖ¹Ê±¼ä' num2str(tend) 's'];
+     toy = ['End time' num2str(tend) 's'];
      xlabel(toy)
       xlim([-2 2])
       ylim([uR-0.5 uL+0.5 ])
-      legend('¾«È·½â','ÊıÖµ½â');
+      legend('Exact. Sol.','Num. Sol.');
 else
     error = 0*x;
     shock = s* tend;
@@ -127,22 +127,22 @@ else
         case 4
             title('Beam-Warming error')
     end
-    toy = ['ÖÕÖ¹Ê±¼ä' num2str(tend) 's'];
+    toy = ['End time' num2str(tend) 's'];
      xlabel(toy);
      [m,p] = max(error);
-     disp('×î´óÎó²îÖµ')
+     disp('Maximum Error')
      m
-     disp('×î´óÎó²îÖµËùÔÚ×ø±ê')
+     disp('Index of Maximum Error')
      x(p)
-     disp('Îó²îÆ½¾ùÖµ')
+     disp('Average Absolute Error')
      sum(error/length(error))
 end   
 
-% toy = ['ÖÕÖ¹Ê±¼ä' num2str(tend)];
+% toy = ['End time' num2str(tend)];
 % xlabel(toy)
 
 
-%ĞèÒªµÄº¯Êı
+%necessary functions
 function ret = f( u )
     ret = 0.5 * u.^2;
 end
