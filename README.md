@@ -17,7 +17,7 @@ tested their performances  under **Dirichlet** and **Neumann** boundary conditio
 I also implemented numerical experiments to verify the convergence of finite volume method.
 
 ## Project 3
-The third project is about **Riemann problem for inviscid Burger's equation**.
+The third project is about **Riemann problem for inviscid Burgers equation**.
 I used four different schemes, **Lax-Friedrichs, Lax-Wendroff, Godunov and Beam-Warming**,
 to give numerical solution of the Riemann problem for inviscid Burger's equation and tested the 
 performances of the four schemes under different time steps and space steps.
