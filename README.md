@@ -23,7 +23,7 @@ to give numerical solution of the Riemann problem for inviscid Burger's equation
 performances of the four schemes under different time steps and space steps.
 
 ### Note
-The comments of the codes are given in reports. Also,
-the reports are in Chinese right now. I will update the English version as soon as possible.
+Some instructions of the functions I wrote are given in reports. If you have any questions, please feel free
+to contact me :).
 
 
